@@ -9,21 +9,49 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  background-color: #fafbfc;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
 }
 header{
+  background-color: rgb(255, 255, 255,.75);
+  /* display: block;   */
+  position: fixed;
+}
+nav{
   display: flex;
-  justify-content: space-between;
-  background-color: white .5;  
+  align-items: center;
+  justify-content: left;
+}
+nav + nav{
+  display: flex;
+  justify-content: right;
 }
 main{
   display:flex;
   justify-content: space-between;
   align-content: flex-start;
   flex-flow: wrap;
+  box-sizing: border-box;
+}
+a img{
+  border: solid .07rem;
+  margin:0;
+  border-color:rgb(226, 228, 232);
+  border-radius: 9px;
+}
+li{
+  list-style: none;
+  line-height: 1.5;
+}
+article ul{
+  display:flex;
+  justify-content: space-between;
 }
 article{
-  border: solid .07rem;
-  margin:2rem;
-  border-color:rgb(190, 190, 190);
-  border-radius: 10px;
+  padding-left: 24px;
+  padding-right:24px;
 }
+
+
+
