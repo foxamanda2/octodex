@@ -10,3 +10,20 @@ body {
   margin: 0;
   min-height: 100%;
 }
+header{
+  display: flex;
+  justify-content: space-between;
+  background-color: white .5;  
+}
+main{
+  display:flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-flow: wrap;
+}
+article{
+  border: solid .07rem;
+  margin:2rem;
+  border-color:rgb(190, 190, 190);
+  border-radius: 10px;
+}
