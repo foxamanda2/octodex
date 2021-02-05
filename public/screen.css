@@ -17,15 +17,13 @@ header{
   background-color: rgb(255, 255, 255,.75);
   /* display: block;   */
   position: fixed;
-}
-nav{
   display: flex;
-  align-items: center;
-  justify-content: left;
+  justify-content: space-between;
 }
-nav + nav{
-  display: flex;
-  justify-content: right;
+ nav li{
+  display: inline-block;
+  /* align-items: center;
+  justify-content: left; */
 }
 main{
   display:flex;
@@ -52,6 +50,22 @@ article{
   padding-left: 24px;
   padding-right:24px;
 }
+footer{
+  border-top: solid .07rem;
+  border-color:rgb(226, 228, 232) ;
+  padding:1rem;
+  color: rgb(88, 96, 105); 
+}
+@media (min-width:400px){
+
+  article{
+    margin:auto;
+  }
+  article ul{
+    padding:auto;
+  }
+}
+@media (min)
 
 
 
