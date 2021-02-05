@@ -10,79 +10,80 @@ body {
   margin: 0;
   min-height: 100%;
   background-color: #fafbfc;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
 }
-header{
-  background-color: white;
-  display:; 
-  width:100%;
-  margin: .5rem;
+header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.75);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom:1px solid rgb(226, 228, 232);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  margin-bottom: 40px;
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.05);
 }
-header nav ul{
+header nav ul {
   display: flex;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0);
 }
-header nav li{
-  margin: .5rem;
+header nav li {
+  margin: 0.5rem;
 }
-header li a{
-  color:black;
-  text-decoration: none; 
+header li a:link,
+header li a:visited {
+  color: black;
+  text-decoration: none;
 }
- /* nav li{
-  display: inline-block;
-  /* align-items: center;
-  justify-content: left; */
-
-main{
-  display:flex;
+header li.active a:link,
+header li.active a:visited {
+  color: rgb(88, 96, 105);
+}
+main {
+  display: flex;
   justify-content: space-between;
-  align-content: flex-start;
   flex-flow: wrap;
-  box-sizing: border-box;
 }
-a img{
-  border: solid .07rem;
-  margin:0;
-  border-color:rgb(226, 228, 232);
+a img {
+  border: solid 0.07rem;
+  border-color: rgb(226, 228, 232);
   border-radius: 9px;
 }
-li{
+li {
   list-style: none;
   line-height: 1.5;
 }
-article ul{
-  display:flex;
+article li a:link,
+article li a:visited {
+  color: black;
+  text-decoration: none;
+}
+article ul {
+  display: flex;
   justify-content: space-between;
+  padding: 0;
 }
-article{
+article {
   padding-left: 24px;
-  padding-right:24px;
+  padding-right: 24px;
 }
-footer{
-  border-top: solid .07rem;
-  border-color:rgb(226, 228, 232) ;
-  padding:1rem;
-  color: rgb(88, 96, 105); 
+footer {
+  border-top: solid 0.07rem;
+  border-color: rgb(226, 228, 232);
+  padding: 1rem;
+  color: rgb(88, 96, 105);
 }
-@media (min-width:400px) and (max-width:500px){
-
-  article{
-    margin:auto;
+@media (min-width: 400px) and (max-width: 500px) {
+  article {
+    margin: auto;
   }
-  article ul{
-    padding:auto;
+  article ul {
+    padding: auto;
   }
-  main article.responsive{
-    width:400;
+  main article.responsive {
+    width: 400;
   }
 }
-@media (min)
-
-
-
+@media (min);
