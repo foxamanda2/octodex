@@ -14,17 +14,31 @@ body {
   font-size: 14px;
 }
 header{
-  background-color: rgb(255, 255, 255,.75);
-  /* display: block;   */
-  position: fixed;
+  background-color: white;
+  display:; 
+  width:100%;
+  margin: .5rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  border-bottom:1px solid rgb(226, 228, 232);
 }
- nav li{
+header nav ul{
+  display: flex;
+  align-items: center;
+}
+header nav li{
+  margin: .5rem;
+}
+header li a{
+  color:black;
+  text-decoration: none; 
+}
+ /* nav li{
   display: inline-block;
   /* align-items: center;
   justify-content: left; */
-}
+
 main{
   display:flex;
   justify-content: space-between;
@@ -56,13 +70,16 @@ footer{
   padding:1rem;
   color: rgb(88, 96, 105); 
 }
-@media (min-width:400px){
+@media (min-width:400px) and (max-width:500px){
 
   article{
     margin:auto;
   }
   article ul{
     padding:auto;
+  }
+  main article.responsive{
+    width:400;
   }
 }
 @media (min)
