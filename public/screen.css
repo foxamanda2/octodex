@@ -43,7 +43,8 @@ header li.active a:visited {
 }
 main {
   display: flex;
-  justify-content: space-between;
+  /* Changed from space-between */
+  justify-content: flex-start;
   flex-flow: wrap;
 }
 a img {
@@ -75,15 +76,19 @@ footer {
   padding: 1rem;
   color: rgb(88, 96, 105);
 }
-@media (min-width: 400px) and (max-width: 500px) {
+
+@media (max-width: 800px) {
   article {
     margin: auto;
   }
   article ul {
     padding: auto;
   }
-  main article.responsive {
-    width: 400;
+  header li.github {
+    display: none;
   }
 }
-@media (min);
+@media only screen and (max-width: 480px) {
+  article ul {
+  }
+}
