@@ -43,7 +43,7 @@ header li.active a:visited {
 }
 main {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-flow: wrap;
 }
 a img {
@@ -76,7 +76,7 @@ footer {
   color: rgb(88, 96, 105);
 }
 
-/* @media all and (min-width: 1200px) {
+/* @media all and (min-width: 900px) {
   article ul {
     width: 100%;
   }
@@ -88,8 +88,8 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-flow: wrap;
-  }
- */
+   */
+
 @media (max-width: 700px) {
   header li.github {
     display: none;
