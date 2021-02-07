@@ -76,27 +76,35 @@ footer {
   color: rgb(88, 96, 105);
 }
 
-@media (max-width: 800px) {
-  article {
-    margin: auto;
+@media all and (max-width: 700px) {
+  main {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
   }
   article ul {
-    padding: auto;
+    width: 80%;
+  }
+  article a img.image {
+    width: 80%;
+    height: 80%;
+  }
+  article {
+    margin: auto;
   }
   header li.github {
     display: none;
   }
+  /* header nav.firstmenu {
+    padding-left: 3px;
+  } */
 }
-/* @media only screen and (max-width: 1200px) {
+@media all and (max-width: 1000px) and (min-width: 700px) {
   article ul {
-    width: 50%;
+    width: 400;
   }
-  main {
-    display: flex;
-    flex-flow: wrap;
+  article a img.image {
+    width: 400;
+    height: 400;
   }
-  .first {
-    width: 50%;
-    height: 50%;
-  }
-} */
+}
